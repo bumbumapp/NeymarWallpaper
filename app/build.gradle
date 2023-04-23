@@ -7,8 +7,11 @@ plugins {
 android {
     compileSdk 33
 
+    lintOptions {
+        checkReleaseBuilds false
+    }
     defaultConfig {
-        applicationId "com.lordapps.neymarwallpapers"
+        applicationId "com.lordapps.neymarwallpaper"
         minSdk 21
         targetSdk 33
         versionCode 2
@@ -16,9 +19,6 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
-
-
 
 
     buildTypes {
